@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNEXION</title>
+    <style>
+        section {
+            width: 40%;
+            border: 2px solid;
+            border-radius: 5px 1px 0;
+            margin-left: 25%;
+        }
+
+        h4 {
+            text-align: center;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+
+        div#info {
+            background-color: skyblue;
+            margin: 12px;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        input {
+            width: 75%;
+            padding: 5px;
+            margin: 6px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 7px;
+            margin: 10px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .divbtn button {
+            background-color: rgb(24, 145, 194);
+            border-color: rgb(24, 145, 194);
+        }
+
+        .divbtn {
+            margin-left: 63%;
+        }
+
+
+
+        .divbtn1 {
+            margin: 5px;
+            color: black;
+            background-color: rgb(235, 231, 231);
+            padding: 20px;
+            border-radius: 3px;
+        }
+
+        .divbtn1 button1 {
+            border-color: lightgrey;
+            background-color: orange;
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        .divbtn1 button2 {
+            border-color: lightgrey;
+            background-color: rgb(78, 126, 240);
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        .divbtn1 a {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(53, 219, 73);
+            padding: 7px;
+            border-radius: 5px;
+        }
+        .username {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 250px;
+        }   
+        .username .icon {
+            margin-left: 40px;
+            margin-right: 5px;
+            border: 5px;
+            font-size: 15px;
+            color: rgb(199, 199, 199);
+        }
+
+        .password-key {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 250px;
+        }
+
+        .password-key .icon {
+            margin-left: 40px;
+            margin-right: 5px;
+            border: 5px;
+            font-size: 15px;
+            color: rgb(199, 199, 199);
+        }
+        
+    </style>
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h4>Espace étudiant</h4>
+        <div id="info">Veuillez renseigner le nom d'utilisateur et le mot de passe</div>
+        <form>
+            <div>
+                <div class="username">
+                    <span class="icon">👤</span>
+                    <input type="text" placeholder="Nom d'utilsateur">
+                </div>
+            </div>
+            <div class="password">
+                <div class="password-key">
+                    <span class="icon">🔒</span>
+                    <input type="password" placeholder="Mot de passe">
+                </div>
+            </div>
+            <div class="divbtn">
+                <button>Se connecter</button>
+            </div>
+        </form>
+        <div class="divbtn1">
+            <button1>Mot de passe oublié ?</button1>
+            <button2>Verifier autorisation ?</button2>
+            <a href="compte.html">Créer un compte</a>
+
+        </div>
+    </section>
+</body>
+
+</html>

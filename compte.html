@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compte</title>
+
+    <style>
+        section {
+            width: 65%;
+            border: 2px solid;
+            border-radius: 5px 1px 0;
+            margin-left: 25%;
+            margin-right: 15%;
+            padding: 10px;
+        }
+
+        h4 {
+            text-align: center;
+            background-color: rgb(226, 223, 223);
+            padding: 10px;
+        }
+
+        h5 {
+            text-align: 20px;
+            color: red
+        }
+
+        h5#info {
+            text-align: 10px;
+            margin: 15px;
+        }
+
+        section {
+            width: 65%;
+            border: 2px solid;
+            text-align: 15px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        select {
+            text-align: 20px;
+            width: 100%;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 2px;
+        }
+
+        select#identifiant {
+            width: 65%;
+            margin: 2px;
+            margin-left: 15%;
+            margin-top: 2px;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+
+
+        table {
+            width: 88%;
+            padding: 5px;
+            margin: 2px;
+            margin-left: 2px;
+            border-radius: 2px;
+            text-align: left;
+            box-sizing: border-box;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+        }
+       
+
+        td {
+            padding: 5px;
+            margin: 2px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin: 6px;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 15%;
+            padding: 10px;
+            margin: 5px;
+            margin-left: 10px;
+            border-radius: 5px;
+            color: black;
+            border: 2px solid;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: rgb(32, 143, 227);
+            border-color: rgb(32, 143, 227);
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgb(32, 143, 227);
+            color: white;
+        }
+
+        button[type="submit"]:nth-child(2) {
+            background-color: rgb(51, 189, 58);
+            border-color: rgb(51, 189, 58)
+        }
+
+        button[type="submit"]:nth-child(2):hover {
+            background-color: rgb(51, 189, 58);
+            color: white;
+        }
+
+        button[type="submit"]:nth-child(3) {
+            background-color: rgb(235, 51, 51);
+            border-color: rgb(235, 51, 51);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section>
+        <h4>Création de votre compte d'accès</h4>
+        <h5 id="info">
+            <li>Tous les champs sont obligatoires</li><br>
+            <li>Le mot de passe doit contenir 8 caractère minimum avec un melange de chiffres <br> et de lettres.</li>
+            <br>
+        </h5>
+        <form>
+            <section>
+                <label for="identifiant">Votre Identifiant:</label>
+                <select id="identifiant">
+                    <option value="">selectioner le type d'identifiant</option>
+                    <option value="Numero carte etudiant">Numero carte etudiant</option>
+                    <option value="Numero Table">Numero Table</option>
+                    <option value="CIN/Passeport">CIN/Passeport</option>
+                    <option value="INE">INE</option>
+                </select>
+                <table id="Table">
+                    <tr id="inden">
+                        <td><label for="Votre'identifiant :">Votre identifiant :</label></td>
+                        <td><input type="text" id="votre identifiant" name="votre identifiant" required
+                                placeholder="votre identifiant"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Nom">Nom :</label></td>
+                        <td><input type="text" id="nom" name="nom de famille" required placeholder="Nom de famille">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="prénoms">Prénoms:</label></td>
+                        <td><input type="text" id="prénoms" name="prénoms" required placeholder="Prénoms"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Créer un mot de passe pour la connexion à la plateforme ">Mot de passe:</label>
+                        </td>
+                        <td><input type="password" id="mot de passe" name="mot de passe" required
+                                placeholder="créer un mot de passe pour la connexion"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmation du mot de passe">Confirmation du mot de passe :</label></td>
+                        <td><input type="password" id="confirmpassword" name="confirmpassword" required
+                                placeholder="confirmer votre mot de passe"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Adresse e-mail">E-mail Personal:</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder=" E-mail personel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="captcha">Captcha:</label></td>
+                        <td><input type="text" id="captcha" name="captcha" required
+                                placeholder="Saisissez les caractères ci-dessous"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right: 15px;">
+                            <button type="submit">Régénerer</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <button type="submit">Valider</button>
+            <button type="submit">Annuler</button>
+    </section>
+
+    </form>
+    </section>
+
+</body>
+
+</html>
